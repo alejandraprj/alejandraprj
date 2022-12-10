@@ -12,7 +12,7 @@ import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 
 import Me from "../../images/IMG_8171.JPG"
-import CV from '../../resume/cv.pdf';
+import CV from '../../tex/cv.pdf';
 
 import HUFPI from './image/hufpi.png';
 import Peru from './image/PeruHMUN.png';
@@ -68,16 +68,18 @@ const Home = () => {
                 </Date>
                 <P><br></br>
                     Built an online library through web-queries with SQL and web scraping with Python. Wrote a white-paper about the current state of camera trap distance sampling through automated tools.
-                        {/* ok TODO: add github and paper */}
+                    {/* ok TODO: add github and paper */}
                 </P>
             </Descr>
-            {/* C Minds ? TODO : leave */}
+            {/* Add C Minds? TODO*/}
 
             <Title>Relevant Projects</Title>
             <Line></Line>
             <Bar>
-                {/* TODO: AI CS182 add last homework
-                TODO: CS120 problem sets - compile and describe the class? */}
+                {/* TODO: 
+                    AI CS182 add last homework
+                    CS120 problem sets ?
+                */}
                 <Item>
                     <Date>
                         <p>COMPSCI51<br></br>
