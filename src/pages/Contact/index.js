@@ -3,7 +3,6 @@ import axios from "axios";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import { Container, Form, Field } from "./styles"
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 class Contact extends React.Component {
   constructor(props) {
@@ -40,18 +39,18 @@ class Contact extends React.Component {
           <Container>
               <Form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                   <Field>
-                      <label htmlFor="name">Name</label>
+                      <label htmlFor="name">name</label>
                       <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
                   </Field>
                   <Field>
-                      <label htmlFor="exampleInputEmail1">Email address</label>
+                      <label htmlFor="exampleInputEmail1">email</label>
                       <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
                   </Field>
                   <Field>
-                      <label htmlFor="message">Message</label>
+                      <label htmlFor="message">message</label>
                       <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
                   </Field>
-                  <button type="submit" className="btn btn-primary">Submit</button>
+                  <button type="submit" className="btn btn-primary">submit</button>
               </Form>
           </Container>
           <Footer background={false} /> 
