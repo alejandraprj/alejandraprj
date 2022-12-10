@@ -1,16 +1,21 @@
-### Hi there 👋
+# revamping my website with react.js
 
-<!--
-**alejandraprj/alejandraprj** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## new steps: (from the src branch)
 
-Here are some ideas to get you started:
+run the following to create a build and push it to main branch in private_web:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```npm run deploy```
+
+from the alejandraprj repo, fetch and merge by:
+
+```git fetch prod; git merge prod/main```
+
+in alejandraprj, prod is the remote for private_web.
+
+don't forget to ```push```! (in the alejandraprj repo, to see updates, no need to add/commit).
+
+## set up
+
+you want to run ```npm install``` and clone ```alejandraprj``` from [https://github.com/alejandraprj/alejandraprj](https://github.com/alejandraprj/alejandraprj). from the alejandraprj directory, add a remote for this private_web repository, to then fetch and merge with the main branch of this repository and update alejandraprj. 
+
+to update you create a build in the main branch of private_web, and to do that, run the ```npm run deploy```, and then sync with the production repository by linking this repository to it, and then fetch and merge to main in private_web.
