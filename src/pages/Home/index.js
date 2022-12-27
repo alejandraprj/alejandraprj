@@ -1,18 +1,18 @@
 import React from "react";
 
-import { Intro, Descr, 
-         Img, Link, LHS, RHS,  
+import { Intro, Descr, Link,  
          Experience, Pub, Pubs,
          Title, SubTitle, Date, P,
-         Bar, Item 
+         Bar, Item,
+         B, LB, RB
        } from "./styles";
-import { Line } from "../../styles/index";
+import { Line, Img } from "../../styles/index";
 
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 
-import Me from "../../images/IMG_8171.JPG"
 import CV from '../../tex/cv.pdf';
+import Me from '../../images/IMG_0223.jpg';
 
 import HUFPI from './image/hufpi.png';
 import Peru from './image/PeruHMUN.png';
@@ -23,28 +23,34 @@ import Perudoc from './documents/PERUMUN2020-LEGAL.pdf';
 import Interfacedoc from './documents/PereaRojas-WebBasedInterface.pdf';
 import YSPAdoc from './documents/Team4-YSPA.pdf';
 
-
 const Home = () => {
     return (
         <>
         <NavBar background={false} />
         <Intro>
-            <LHS><Img src={ Me }></Img></LHS>
-            <RHS>
-                <p> Hello! My name is Alejandra, and I do a bunch of things. One of them is coding this website, which is in the works for sure. I do this in my free time, which does not exist, unfortunately, at the moment. However, thanks for stalking me! Hope you like the color scheme. <br></br><br></br>
-                I'm currently a junior at Harvard University studying Computer Science with a minor in Physics. I like languages, so I'm learning Mandaring Chinese. I'm also in many clubs, and I tend to focus on technology and inclusivity. I will be graduating in 2024. <br></br><br></br>
-                I work part time as a teaching fellow for my favorite class in Systems Programming and Machine Organization. And yes, I'm currently looking for a full-time job! I have been undocumented for most of my life in the United States (I grew up in Peru ✌️). I obtained a work permit a bit ago (July 2022), so I'm barely getting started in learning about the ins and outs of recruitment. Wish me luck! <br></br><br></br>
-                Email me at <b>aperearojas@college.harvard.edu</b> </p>
-            </RHS>
+            <Img src={Me}></Img>
+            <p>
+                hi! my name is Alejandra, and i'm a rising senior at harvard. i'm studying computer science and a little bit of physics. i find making this website as a continuous stream of updates about my passions and interests throughout my "academic career".
+                <br></br><br></br>
+                i came to the united states in 2014, and i grew up in peru. naturally, i grew a passion to learn languages soon after  mastering english. i'm currently trying to reach fluency in both japanese and mandarin chinese. there are more chinese restaurants in lima (peru) than in nyc. we call them chifas (吃饭-chi1fan4 means eating a meal). parallels like these are endless in the capital of peru. our last dictator to date was of japanese descent (wrote a paper on it btw).  
+                <br></br><br></br>
+                going back to my main passions. i love computer science and physics because they give me the freedom to use critical thinking skills and creativity to solve problems we direly need answers to. there are so many venues to helping our planet in so many fields, and i find that these two are the most natural to me. 
+                <br></br><br></br>
+                you can read more about my experience in the remainder of this website.
+                <br></br><br></br>
+                as a first generation immigrant, i'm in the process of *hopefully* obtaining a greencard. but as of november 2022, i am able to officially work a job that will not require citizenship (rip NASA). i know that my experience so far is only just the start.
+            </p>
         </Intro>
 
         <Experience>
-
-            <Title>Work Experience</Title>
-            <br></br>
-                <Link>read a concise resume
-                <a href={CV} target="blank"> here</a>!</Link>
-            <br></br>
+            <B>
+                <LB><Title>Work Experience</Title></LB>
+                <RB>
+                    <Link><a href={CV} target="blank">
+                        <u>printable version here</u>
+                    </a></Link>
+                </RB>
+            </B>
             <Line></Line>
             <SubTitle>TeamCore PAWS</SubTitle>
             <p>Jun 2022-Present</p>
@@ -71,15 +77,10 @@ const Home = () => {
                     {/* ok TODO: add github and paper */}
                 </P>
             </Descr>
-            {/* Add C Minds? TODO*/}
 
             <Title>Relevant Projects</Title>
             <Line></Line>
             <Bar>
-                {/* TODO: 
-                    AI CS182 add last homework
-                    CS120 problem sets ?
-                */}
                 <Item>
                     <Date>
                         <p>COMPSCI51<br></br>
@@ -141,7 +142,7 @@ const Home = () => {
                         <Pub src={YSPA} class="doc-img"></Pub></a> 
                 </Pubs>
             </Descr>
-            <Line></Line><br></br><br></br><br></br>
+            <Line></Line>
         </Experience>
 
         <Footer background={false} /> 

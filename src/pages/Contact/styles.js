@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Colors } from "../../styles/index.js";
 
 export const Container = styled.div`
     max-width: 1024px;
@@ -7,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
-    max-width: 400px;
+    max-width: 444px;
     width: 100%;
     & button {
         float: center;
@@ -25,12 +26,20 @@ export const Field = styled.div`
     display: flex;
     white-wrap: normal;
     display: inline-block;
+    margin-top: 20px;
     
     & label, input, textarea {
         width:100%;
         position: relative;
         display: block;
         margin: auto;
+        font-size: 18px;
+    }
+    & input, textarea {
+        padding: 7px;
+        background-color: ${Colors.darkfield};
+        color: white;
+        border-radius: 2px;
     }
 
     & label {

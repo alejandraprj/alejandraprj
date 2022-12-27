@@ -1,5 +1,6 @@
 
 import styled from "styled-components";
+import BGKodak from "../images/IMG_9288.JPG";
 
 const size = {
     mobileS: "0px",
@@ -26,10 +27,28 @@ export const device = {
 
 export const Colors = {
     altBg: "linear-gradient(to left, #2A5470, #4C4177)",
-    bgImage: "linear-gradient(to left, #4E313C, #5e3b48)",
+    bgImage: "linear-gradient(to left, #b86a30, #35488c)",
     primary: '#EBE9F0',
     dark: '#12121c',
+    darkfield: 'rgba(67, 35, 59, 0.45)'
  };
+
+ export const StyledP = styled.p`
+    font-size: 16px;
+    font-family: 'Fira Code';
+    text-align: center;
+ `;
+
+ export const Img = styled.img`
+    width: 100%;
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    margin-bottom:30px;
+`;
 
  export const Line = styled.div`
     height: 1px; 
@@ -41,12 +60,6 @@ export const Colors = {
     margin-bottom: 18px;"
  `;
 
-export const MetaContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
 export const Container = styled.div`
     width: 100%;
     display: flex;
@@ -57,16 +70,18 @@ export const Container = styled.div`
 `;
 
 export const MegaContainer = styled.html`
+    //background-image: url(${BGKodak});
     background-image: ${Colors.bgImage};
+    //background-repeat: no-repeat;
+   // background-attachment: scroll;
+    //background-size: cover;
     padding: 3%;
     box-sizing: border-box;
     color: rgb(238,232,244);
     min-height: 100vh;
-    font-size: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-size: 15px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-width: 300px;
+    min-width: 200px;
+    font-family: 'Oxygen';
 `;

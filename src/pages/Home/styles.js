@@ -6,58 +6,45 @@ export const Intro = styled.div`
     max-width: 1100px;
     margin: 50px auto;
     @media ${device.mobileS}{
-        display: block;
+        font-size: 13px;
     }
     @media ${device.tablet}{
-        display: flex;
-    }
-`;
-
-export const LHS = styled.div`
-    @media ${device.mobileS}{
-        float: none;
-        margin: 0 auto;
-        width: 60%;
-    }
-    @media ${device.tablet}{
-        float: left;
-        width: 100%;
-        height: inherit;
-        display: inline-block;
-        margin: auto;
-        margin-right: 7%;
-    }
-`;
-
-export const RHS = styled.div`
-    color: ${Colors.primary};
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: flex;
-    float: right;
-    justify-content: center;
-    position: relative;
-    text-align: justify;
-    & b {
-        display: inline;
-    }
-    & p {
-        line-height:27px;
         font-size: 18px;
     }
-    @media ${device.mobileS}{
-        width: 100%;
-        margin: auto;
-    }
-    @media ${device.tablet}{
-        width: 110%;
-        height: auto;
-    }
+    display: block;
 `;
 
+export const B = styled.div`
+    width: 100%;
+    display: table;
+    height: auto;
+    margin: 0px;
+    padding: auto;
+    height: 50px;
+`;
+
+export const LB = styled.div`
+    display: table-cell;
+    float: left;
+    vertical-align: middle;
+    position: relative;
+    line-height: 50px;
+`;
+
+export const RB = styled.div`
+    display: table-cell;
+    float: right;
+    text-align: bottom;
+    vertical-align: middle;
+    & u {
+        vertical-align: middle;
+    }
+    line-height: 25px;
+    padding-top: 18px;
+`;
+
+
 export const Experience = styled.div`
-    color: ${Colors.primary};
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -66,6 +53,8 @@ export const Experience = styled.div`
     justify-content: left;
     position: relative;
     max-width: 1024px;
+    font-family: 'Fira Code';
+    font-size: 15px;
     & b {
         display: inline;
     }
@@ -119,7 +108,7 @@ export const Item = styled.div`
 
 export const Title = styled.h1`
     font-size:30px;
-    margin-bottom:0px;
+    margin: 0px;
 `;
 
 export const SubTitle = styled.h2`
@@ -145,10 +134,10 @@ export const Link = styled.div`
 `;
 
 export const Descr = styled.div`
-    max-width:1024px;
-    text-align:left;
-    font-size: 20px;
-    font-weight: 500;
+    max-width:1000px;
+    text-align: justify;
+    font-size: inherit;
+    font-weight: 400;
     display: flex;
     width: 100%;
     height: auto;
@@ -210,20 +199,5 @@ export const MiniDescr = styled.div`
     }
     @media ${device.tablet} {
         display: inherit;
-    }
-`;
-
-export const Img = styled.img`
-    width: auto;
-    max-height: 800px;
-    @media ${device.mobileS} {
-        width: 100%;
-        height: auto;
-        max-height: none;
-    }
-    @media ${device.mobileL} {
-        width: 100%;
-        height:auto;
-        max-height: 800px;
     }
 `;

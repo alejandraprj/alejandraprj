@@ -3,6 +3,8 @@ import axios from "axios";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import { Container, Form, Field } from "./styles"
+import { Img, StyledP } from "../../styles/index";
+import Me from "../../images/child1.jpg"
 
 class Contact extends React.Component {
   constructor(props) {
@@ -35,7 +37,8 @@ class Contact extends React.Component {
     return( 
         <>
           <NavBar background={false} />
-          <p>This contact form is in progress, please email me at <b>aperearojas@college.harvard.edu</b>. :D<br></br> <br></br> </p>
+          <StyledP>this contact form is in progress, please email me at <b>aperearojas@college.harvard.edu</b></StyledP>
+          <Img src={Me}></Img>
           <Container>
               <Form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                   <Field>

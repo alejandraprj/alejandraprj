@@ -13,7 +13,7 @@ const NavBar = ({ background }) => {
             <NavbarInner>
                 <Link to="/" style={{ textDecoration: "none" }}>
                     <Brand background={background}>
-                        Alejandra Perea Rojas
+                        alejandra
                     </Brand> 
                 </Link>
                 <Links>

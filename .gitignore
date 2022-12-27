@@ -1,17 +1,19 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # private.
-src/.env
-src/tex/
 _oldwebsite/
+*.env
+*tex/
+_papers/
 
 # production side effects
-node_modules/
 build/
+node_modules/
 
 # cache/ds_store
-.DS_Store
-src/pages/Contact/__pycache__
+*.DS_Store
+*__pycache__
 
 # in the works
-src/pages/Contact/email.py 
+*email.py
+
