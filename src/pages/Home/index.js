@@ -1,26 +1,24 @@
 import React from "react";
 
-import { Intro, Descr, Link,  
-         Experience, Pub, Pubs,
+import { Intro, Experience, Descr, Header, Link,  
          Title, SubTitle, Date, P,
-         Bar, Item,
-         B, LB, RB
+         Bar, Item, ItemIm, 
        } from "./styles";
-import { Line, Img } from "../../styles/index";
+import { Line, Img, RHS } from "../../styles/index";
 
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 
-import CV from '../../tex/cv.pdf';
-import Me from '../../images/IMG_0223.jpg';
+import Me from '../../images/vegas3.png';
 
+import CV from '../../tex/cv.pdf';
+import PAWS from './image/cs91r.png'
+import PAWSDOC from './documents/PereaRojas-CS91R.pdf'
 import HUFPI from './image/hufpi.png';
-import Peru from './image/PeruHMUN.png';
-import Interface from './image/interface.png';
-import YSPA from './image/yspa.png';
 import HUFPIdoc from './documents/PereaRojas-PeruPolicyProject.pdf';
-import Perudoc from './documents/PERUMUN2020-LEGAL.pdf';
+import Interface from './image/interface.png';
 import Interfacedoc from './documents/PereaRojas-WebBasedInterface.pdf';
+import YSPA from './image/yspa.png';
 import YSPAdoc from './documents/Team4-YSPA.pdf';
 
 const Home = () => {
@@ -30,38 +28,44 @@ const Home = () => {
         <Intro>
             <Img src={Me}></Img>
             <p>
-                hi! my name is Alejandra, and i'm a rising senior at harvard. i'm studying computer science and a little bit of physics. i find making this website as a continuous stream of updates about my passions and interests throughout my "academic career".
-                <br></br><br></br>
-                i came to the united states in 2014, and i grew up in peru. naturally, i grew a passion to learn languages soon after  mastering english. i'm currently trying to reach fluency in both japanese and mandarin chinese. there are more chinese restaurants in lima (peru) than in nyc. we call them chifas (吃饭-chi1fan4 means eating a meal). parallels like these are endless in the capital of peru. our last dictator to date was of japanese descent (wrote a paper on it btw).  
-                <br></br><br></br>
-                going back to my main passions. i love computer science and physics because they give me the freedom to use critical thinking skills and creativity to solve problems we direly need answers to. there are so many venues to helping our planet in so many fields, and i find that these two are the most natural to me. 
-                <br></br><br></br>
-                you can read more about my experience in the remainder of this website.
-                <br></br><br></br>
-                as a first generation immigrant, i'm in the process of *hopefully* obtaining a greencard. but as of november 2022, i am able to officially work a job that will not require citizenship (rip NASA). i know that my experience so far is only just the start.
+            Hi! My name is Alejandra, and I'm a rising senior at Harvard 
+            studying computer science and physics. 
+            I'm also working towards fluency in Japanese and Mandarin Chinese.
+            On this website, you can learn more about my interests and experience.
+            <br></br><br></br>
+            I grew up in Peru and immigrated to the United States in 2014. 
+            As a first-generation immigrant, 
+            I have been immensely grateful for all the opportunities I have obtained.
+            You may find that I have explored various fields, and 
+            I'm still finding my way through them. 
+            However, I have learned that I love studying computer science and physics 
+            because they allow me to use my critical thinking skills and creativity 
+            to solve important problems. 
+            There are so many ways to make a positive impact on the world, 
+            and they feel like the most natural fit for me.
+            I now look forward to continue finding innovative ways to help the planet! 
+            I received legal status at the end of 2022 in the U.S, 
+            so I'm eager to find what I can do. Thanks for reading!
             </p>
         </Intro>
 
         <Experience>
-            <B>
-                <LB><Title>Work Experience</Title></LB>
-                <RB>
-                    <Link><a href={CV} target="blank">
-                        <u>printable version here</u>
-                    </a></Link>
-                </RB>
-            </B>
+            <Link>
+                <RHS>
+                <a href={CV} target="blank">🖨 <u>printable resume here</u> </a>
+                </RHS>
+            </Link>
+            <Title>Work Experience</Title>
             <Line></Line>
             <SubTitle>TeamCore PAWS</SubTitle>
-            <p>Jun 2022-Present</p>
+            <p>Jun-Dec 2022</p>
             <Descr>
                 <Date>
                     Software Engineer<br></br>
-                    Camrbridge, MA
+                    Cambridge, MA
                 </Date>
                 <P>
-                    Implement a testing interface to the PAWS SMART API with improved error handling and data validation. Build data through QGIS, test interface with JSON scripts in Postman, process tests in Azure cloud computing servers, and develop an automated data processing framework in Python.
-                    Deploy a new version of the PAWS API infrastructure on SMART with improved error handling and data validation. Build data-sets through QGIS and Python, test interface with JSON scripts in Postman, work with test data in Azure, and develop an automated data test processing framework with Python.
+                <Link>Implemented a testing interface to the <a href={'https://github.com/lily-x/paws-smart-api'} target="blank">PAWS SMART API</a> for improved error handling and data validation. Built data through QGIS and Python, developed JSON scripts for a suite of data, and developed a testing interface to automate testing requests to Azure.</Link>
                 </P>
             </Descr>
             <Line></Line>
@@ -70,11 +74,23 @@ const Home = () => {
             <Descr>
                 <Date>
                     Drones and Sensors Intern<br></br>
-                    Remote / New York
+                    Remote / NYC
                 </Date>
-                <P><br></br>
-                    Built an online library through web-queries with SQL and web scraping with Python. Wrote a white-paper about the current state of camera trap distance sampling through automated tools.
+                <P>
+                    Created an online library using SQL and Python web scraping. Wrote a white-paper on camera trap distance sampling and related tools. Developed a Python script to automate news and scholar article processing.
                     {/* ok TODO: add github and paper */}
+                </P>
+            </Descr>
+            <Line></Line>
+            <SubTitle>C Minds</SubTitle>
+            <p>Apr-Aug 2021</p>
+            <Descr>
+                <Date>
+                    Summer Program at DRCLAS<br></br>
+                    Remote / MX
+                </Date>
+                <P>
+                <Link>Worked at a women-led action tank for ethical AI in Mexico, assisted in the early stages of installing a Living Lab in Yucatan and a Diabetic Retinopathy AI-based Screening Program in Jalisco.</Link>
                 </P>
             </Descr>
 
@@ -82,65 +98,111 @@ const Home = () => {
             <Line></Line>
             <Bar>
                 <Item>
-                    <Date>
-                        <p>COMPSCI51<br></br>
-                        MiniML<br></br>
-                        May 2022</p>
-                    </Date>
+                    <Header>
+                        <Link>
+                            <p>COMPSCI 182<br></br> 
+                            <a href={'http://procaccia.info/courses/CS182-F22/pset2.pdf'} target="blank">Sudoku Solver </a>
+                            <a href={'http://procaccia.info/courses/CS182-F22/pset3.pdf'} target="blank">and Ghost AI</a>
+                            <br></br>
+                            Oct-Dec 2022</p>
+                        </Link> 
+                    </Header>
+                    <p>Implemented a Sudoku Solver using forward checking and MRV heuristics as a CSP. Created a Ghost AI using Minimax and Alpha Beta Agents with alpha-beta pruning. Implemented value iteration and Q-learning on a variation of the Frozen Lake Environment.</p>
+                </Item>
+                <Item>
+                    <Header>
+                        <Link><p>COMPSCI 51<br></br>
+                        <a href={'https://book.cs51.io/pdfs/abstraction-21-project.pdf'} target="blank">MiniML</a><br></br>
+                        May 2022</p></Link>
+                    </Header>
                     <p>
-                        Used the substitution model and dynamic scoped environment model to build an OCaml interpreter that is a subset of the OCaml language and is Turing-complete. Implemented unary and binary types and operators, higher-order functions, recursive functions, and conditionals.
+                        Implemented an OCaml interpreter with various features, including unary and binary types, operators, conditionals, and higher-order and recursive functions, using the substitution and dynamic scoped environment models. 
                     </p>
                 </Item>
                 <Item>
-                    <Date>
-                        <p>COMPSCI61<br></br>
-                        Shell<br></br>
-                        Nov 2021</p>
-                    </Date>
-                    <p>
-                        Designed and implemented an interface to handle bash shell's commands (i.e. simple sequence commands, command lists, foreground and background processes, pipelines, conditionals, the cd command, redirections, zombie process handler, and the interrupt signal.
+                    <Header>
+                        <Link><p>COMPSCI 61<br></br>
+                        <a href={"https://cs61.seas.harvard.edu/site/2021/Shell/"} target="blank">Shell</a><br></br>
+                        Nov 2021</p></Link>
+                    </Header>
+                    <p>Designed and implemented an interface to handle bash shell's commands (i.e. simple sequence commands, command lists, foreground and background processes, pipelines, conditionals, the cd command, redirections, zombie process handler, and the interrupt signal.
                     </p>
                 </Item>
                 <Item>
-                    <Date>
-                        COMPSCI61<br></br> 
-                        WeensyOS <br></br>
-                        Oct 2021
-                    </Date>
-                    <p>Implemented kernel for WeensyOS, a mini x86-64 operating system. Developed kernel and process isolation, virtual page allocation, forking, shared memory, overlapping virtual memory address spaces, and an exiting function.</p>
+                    <Header>
+                        <Link><p>COMPSCI61<br></br> 
+                        <a href={'https://cs61.seas.harvard.edu/site/2021/WeensyOS/'} target="blank">WeensyOS</a><br></br>
+                        Oct 2021</p></Link> 
+                    </Header>
+                    <p>Implemented a WeensyOS kernel with features such as kernel isolation, process isolation, virtual page allocation, forking, shared memory, and overlapping virtual memory address spaces, as well as an exiting function. </p>
                 </Item>
             </Bar>
 
             <Title>Leadership & Activities</Title>
             <Line></Line>
-            <SubTitle>Systems Programming Course Assistant</SubTitle>
-            <Descr>
-                <Date><br></br>Sep 2022-Present</Date>
-                <P>Facilitate college-lever course of about 200 students on Systems Programming and Machine Organizations with C++. Hold office hours and review sections twice weekly, covering data memory and representation, assembly, kernel, caching and stdio, shell, and process synchronization.</P>
-            </Descr>
+            <Bar>
+                <Item>
+                    <Header><br></br>
+                        Harvard Psychedelics Club (HPC)<br></br>
+                        Web Director<br></br>
+                        Jun 2022-Present
+                    </Header>
+                    <Link><p>Oversee, manage, and lead web-related projects at <a href="https://harvardpsychedelicsclub.org" target="blank"><u>harvardpsychedelicsclub.org</u></a>. 
+                    Develop strategies to improve user experience, increase website traffic, and achieve the organization's objectives. </p></Link>
+                </Item>
+                <Item>
+                    <Header><br></br>
+                        Systems Programming and Machine Organization<br></br>
+                        Course Assistant<br></br>
+                        Sep-Dec 2022
+                    </Header>
+                    <p>Facilitate college-lever course of about 200 students on Systems Programming and Machine Organizations with C++. Hold office hours and review sections twice weekly, covering data memory and representation, assembly, kernel, caching, shell, and synchronization.</p>
+                </Item>
+                <Item>
+                    <Header><br></br>
+                        Women in Computer Science (WiCS)<br></br>
+                        DIB Advocacy Director<br></br>
+                        Aug-Dec 2022
+                    </Header> 
+                    <p>Led initiatives to promote diversity and inclusion within the computer science community, collaborating with the advocacy team to create events and support for underrepresented groups.</p>
+                </Item>
+            </Bar>
             
             <Title>Relevant Coursework</Title>
             <Line></Line>
             <Descr>
-                <Date><p><br></br>Relevant Classes</p></Date>
-                <P>
-                    Multivariable Calculus, Linear Algebra, Intro to Probability, Discrete Mathematics, Applied Linear Algebra and Big Data, Mechanics, Electromagnetism, Abstraction and Design in Computation, Systems Programming and Machine Organization, Introduction to Algorithms, and Artificial Intelligence.
-                </P>
+                <Header>
+                    <span>
+                        COMPSCI 51 - Abstraction and Design in Computation,<br></br>
+                        COMPSCI 61 - Systems Programming and Machine Organization,<br></br>
+                        COMPSCI 120 - Introduction to Algorithms,<br></br>
+                        PHYSICS 15 - Mechanics and Electromagnetism,<br></br>
+                        APPMATH 120 - Applied Linear Algebra and Big Data,<br></br>
+                        COMPSCI 182 - Artificial Intelligence
+                        {/* PHYSICS 143, COMPSCI 161, COMPSCI 124*/}
+                    </span>
+                </Header>
             </Descr>
             
-            <Title>Writing</Title>
+            <Title>Write-ups</Title>
             <Line></Line>
             <Descr>
-                <Pubs>
+                <Bar>
+                    {/* 
+                        <a href={WCSDoc} target="blank">
+                            <ItemIm src={WCS} class="doc-img"></ItemIm>
+                        </a>
+                    */}
+                    <a href={PAWSDOC} target="blank">
+                        <ItemIm src={PAWS} class="doc-img"></ItemIm>
+                    </a>
                     <a href={HUFPIdoc} target="blank">
-                        <Pub src={HUFPI} class="doc-img"></Pub></a>
-                    <a href={Perudoc} target="blank">
-                        <Pub src={Peru} class="doc-img"></Pub></a>
+                        <ItemIm src={HUFPI} class="doc-img"></ItemIm></a>
                     <a href={Interfacedoc} target="blank">
-                        <Pub src={Interface} class="doc-img"></Pub></a>
+                        <ItemIm src={Interface} class="doc-img"></ItemIm></a>
                     <a href={YSPAdoc} target="blank">
-                        <Pub src={YSPA} class="doc-img"></Pub></a> 
-                </Pubs>
+                        <ItemIm src={YSPA} class="doc-img"></ItemIm></a> 
+                </Bar>
             </Descr>
             <Line></Line>
         </Experience>

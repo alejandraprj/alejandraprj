@@ -1,0 +1,17 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+_oldwebsite/
+_papers/
+build/
+node_modules/
+public/
+src/
+.gitignore
+.htaccess
+Dockerfile
+package-lock.json
+package.json 
+README.md

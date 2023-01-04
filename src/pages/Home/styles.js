@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { Colors, device } from "../../styles/index";
 
 export const Intro = styled.div`
-    width:90%;
-    max-width: 1100px;
+    width:100%;
+    max-width: 1024px;
     margin: 50px auto;
+    line-height: 25px;
     @media ${device.mobileS}{
         font-size: 13px;
     }
@@ -13,36 +14,6 @@ export const Intro = styled.div`
     }
     display: block;
 `;
-
-export const B = styled.div`
-    width: 100%;
-    display: table;
-    height: auto;
-    margin: 0px;
-    padding: auto;
-    height: 50px;
-`;
-
-export const LB = styled.div`
-    display: table-cell;
-    float: left;
-    vertical-align: middle;
-    position: relative;
-    line-height: 50px;
-`;
-
-export const RB = styled.div`
-    display: table-cell;
-    float: right;
-    text-align: bottom;
-    vertical-align: middle;
-    & u {
-        vertical-align: middle;
-    }
-    line-height: 25px;
-    padding-top: 18px;
-`;
-
 
 export const Experience = styled.div`
     -moz-box-sizing: border-box;
@@ -63,52 +34,9 @@ export const Experience = styled.div`
     }
 `;
 
-export const Bar = styled.div`
-    white-space: nowrap;
-    -ms-overflow-style: none;
-    scrollbar-color: transparent transparent;
-    & ::-webkit-scrollbar {
-        display: none;
-    }
-    max-height:400;
-    width: 100%;
-    @media ${device.mobileS} {
-        display: inline-block;
-        float: center;
-        justify-content: center;
-        overflow-x: scroll;
-        scroll-snap-type: y mandatory;
-        scroll-snap-stop: always-stop-odd;
-    }
-    @media ${device.tablet} {
-        overflow: auto;
-        display: inline-block;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        scroll-snap-stop: always-stop-odd;
-    }
-    
-`;
-
-export const Item = styled.div`
-    width: 450px;
-    max-height:300px;
-    margin: 0 40px 0 10px;
-    white-space:normal;
-    text-align:justify;
-    height: 300px;
-    display: inline-block;
-    @media ${device.mobileS}{
-        scroll-snap-align: center;
-    }
-    @media ${device.tablet}{
-        scroll-snap-align: center;
-    }
-`;
-
 export const Title = styled.h1`
     font-size:30px;
-    margin: 0px;
+    margin-top: 40px;
 `;
 
 export const SubTitle = styled.h2`
@@ -146,14 +74,23 @@ export const Descr = styled.div`
 `;
 
 export const Date = styled.div`
-    display:flex;
-    width:30%;
-    line-height:35px;
-    margin: 20px 0 0 0;
+    display: flex;
+    width:40%;
+    text-align: left;
+    justify: none;
+    line-height:28px;
+    margin: 0;
     & p {
         margin: 0 0 10px 0;
-        line-height:25px;
+        line-height:23px;
     }
+`;
+
+export const Header = styled.div`
+    display: flex;
+    width:100%;
+    text-align: left;
+    line-height:23px;
 `;
 
 export const P = styled.div`
@@ -162,42 +99,66 @@ export const P = styled.div`
     line-height:25px;
 `;
 
-export const Pub = styled.img`
-    height: 300px;
-    margin: 30px;
+export const Bar = styled.div`
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    max-height:300;
+    width: 100%;
+    height: inherit;
     @media ${device.mobileS} {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 400px;
+        max-height: 350px;
+        overflow: auto;
+        display: inline-block;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-snap-stop: always-stop-odd;
+        scrollbar-color: black;
     }
     @media ${device.tablet} {
+        overflow: auto;
+        display: inline-block;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always-stop-even;
+    }
+    & ::-webkit-scrollbar {
+        display: none;
+    }
+`;
+
+export const Item = styled.div`
+    white-space: normal;
+    text-align: justify;
+    @media ${device.mobileS}{
+        display: block;
+        margin: 30px auto;
+        height: 350px;
+        width: 90%;
+        scroll-snap-align: center;
+    }
+    @media ${device.tablet}{
+        display: inline-block;
+        width: 400px;
+        height: 300px;
+        margin: 0 40px 0 10px;
+        scroll-snap-align: center;
+    }
+`;
+
+export const ItemIm = styled.img`
+    white-space: normal;
+    @media ${device.mobileS}{
+        display: block;
+        margin: 30px auto;
+        height: 350px;
+        scroll-snap-align: center;
+    }
+    @media ${device.tablet}{
         display: inline-block;
         margin: 30px;
         height: 300px;
-    }
-`;
-
-export const Pubs = styled.div`
-    width: 100%;
-    @media ${device.mobileS} {
-        display: inline-block;
-        float center;
-        justify-content: center;
-        overflow: hidden;
-    }
-    @media ${device.tablet} {
-        white-space: nowrap;
-        overflow: auto;
-        display: inline-block;
-    }
-`;
-
-export const MiniDescr = styled.div`
-    @media ${device.mobileS} {
-        display: none;
-    }
-    @media ${device.tablet} {
-        display: inherit;
+        width: auto;
+        margin: 0 40px 0 10px;
+        scroll-snap-align: center;
     }
 `;

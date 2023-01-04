@@ -1,73 +1,108 @@
 import React from "react";
-import axios from "axios";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import { Container, Form, Field } from "./styles"
 import { Img, StyledP } from "../../styles/index";
-import Me from "../../images/child1.jpg"
+import Me from "../../images/child1.jpg";
 
 class Contact extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
       name: '',
       email: '',
-      message: ''
-    }
+      message: '',
+      loading: false,
+    };
+
+    this.onNameChange = this.handleNameChange.bind(this);
+    this.onEmailChange = this.handleEmailChange.bind(this);
+    this.onMessageChange = this.handleMessageChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    
   }
-  handleSubmit(e) {
-    e.preventDefault();
-    axios({
-      method: "POST",
-      url: "http://localhost:3002/send",
-      data:  this.state
-    }).then((response)=>{
-      if (response.data.status === 'success') {
-        alert("message sent!");
-        this.resetForm()
-      } else if (response.data.status === 'fail') {
-        alert("sorry! message failed to send :o")
-      }
-    })
+
+  handleNameChange(event) {
+    this.setState({name: event.target.value});
   }
-  resetForm() {
-    this.setState({name: '', email: '', message: ''})
+
+  handleEmailChange(event) {
+    this.setState({email: event.target.value});
   }
+
+  handleMessageChange(event) {
+    this.setState({message: event.target.value});
+  }
+
+  handleSubmit(event) {
+    
+    event.preventDefault();
+
+    this.setState({loading: true});
+
+    const formData = new FormData();
+    formData.append('name', this.state.name);
+    formData.append('email', this.state.email);
+    formData.append('message', this.state.message);
+
+    fetch('http://192.168.1.207:8080/send', {
+          method: 'POST', body: formData })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          console.log("error");
+          throw new Error('An error occurred');
+        } 
+      })
+      .then((user) => {
+        this.setState({
+          name: "",
+          email: "",
+          message: "",
+          loading: false,
+        });
+        return alert(user.status);
+      })
+      .catch((error)=>{
+        this.setState({loading: false});
+        return alert("sorry about that! it's possible that my server is down. please email me and thank you :)")
+      });
+  }
+
   render() {
-    return( 
-        <>
-          <NavBar background={false} />
-          <StyledP>this contact form is in progress, please email me at <b>aperearojas@college.harvard.edu</b></StyledP>
-          <Img src={Me}></Img>
-          <Container>
-              <Form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                  <Field>
-                      <label htmlFor="name">name</label>
-                      <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
-                  </Field>
-                  <Field>
-                      <label htmlFor="exampleInputEmail1">email</label>
-                      <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-                  </Field>
-                  <Field>
-                      <label htmlFor="message">message</label>
-                      <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-                  </Field>
-                  <button type="submit" className="btn btn-primary">submit</button>
-              </Form>
-          </Container>
-          <Footer background={false} /> 
-        </>
-    );
-  }
-  onNameChange(event) {
-	  this.setState({name: event.target.value})
-  }
-  onEmailChange(event) {
-	  this.setState({email: event.target.value})
-  }
-  onMessageChange(event) {
-	  this.setState({message: event.target.value})
+    return ( <>
+      <NavBar background={false} />
+      <StyledP>
+        My Flask email app is most likely down. I'm trying different hosting platforms! Please email me at <b>aperearojas@college.harvard.edu</b> 
+      </StyledP>
+      <Img src={Me}></Img>
+      <Container>
+        <Form onSubmit={(this.handleSubmit)}>
+          <Field><label>
+            name
+            <input type="text" value={this.state.name} onChange={this.onNameChange} />
+          </label></Field>
+          <Field><label>
+            email
+            <input type="text" value={this.state.email} onChange={this.onEmailChange}/>
+          </label></Field>
+          <Field><label>
+            message
+            <textarea rows="5" value={this.state.message} onChange={this.onMessageChange}/>
+          </label></Field>
+          {this.state.loading ? (
+            <><p> Loading... </p></>
+          ) : ( 
+            <>
+              <button type="submit">Submit</button> 
+            </>
+          )}
+        </Form>
+      </Container>
+      <Footer background={false} /> 
+    </> );
   }
 }
 export default Contact;

@@ -1,6 +1,5 @@
 
 import styled from "styled-components";
-import BGKodak from "../images/IMG_9288.JPG";
 
 const size = {
     mobileS: "0px",
@@ -27,7 +26,7 @@ export const device = {
 
 export const Colors = {
     altBg: "linear-gradient(to left, #2A5470, #4C4177)",
-    bgImage: "linear-gradient(to left, #b86a30, #35488c)",
+    bgImage: "linear-gradient(to left, #b86a30,#35488c)",
     primary: '#EBE9F0',
     dark: '#12121c',
     darkfield: 'rgba(67, 35, 59, 0.45)'
@@ -37,11 +36,12 @@ export const Colors = {
     font-size: 16px;
     font-family: 'Fira Code';
     text-align: center;
+    max-width: 800px;
  `;
 
  export const Img = styled.img`
-    width: 100%;
-    max-height: 300px;
+    max-width: 100%;
+    max-height: 400px;
     width: auto;
     margin: 0 auto;
     display: block;
@@ -70,11 +70,7 @@ export const Container = styled.div`
 `;
 
 export const MegaContainer = styled.html`
-    //background-image: url(${BGKodak});
     background-image: ${Colors.bgImage};
-    //background-repeat: no-repeat;
-   // background-attachment: scroll;
-    //background-size: cover;
     padding: 3%;
     box-sizing: border-box;
     color: rgb(238,232,244);
@@ -83,5 +79,9 @@ export const MegaContainer = styled.html`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-width: 200px;
-    font-family: 'Oxygen';
+    font-family:'Oxygen';
+`;
+
+export const RHS = styled.div`
+    float: right;
 `;

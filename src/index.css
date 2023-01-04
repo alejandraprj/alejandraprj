@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: 'Fira Code', -apple-system, 'Segoe UI', 'Oxygen','Ubuntu', 'Cantarell', 'Helvetica Neue';
+  font-family: 'Fira Code', 'Oxygen','Ubuntu', 'Cantarell', 'Helvetica Neue';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

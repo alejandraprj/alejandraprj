@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # private.
 _oldwebsite/
 *.env
@@ -13,7 +11,4 @@ node_modules/
 # cache/ds_store
 *.DS_Store
 *__pycache__
-
-# in the works
-*email.py
 
