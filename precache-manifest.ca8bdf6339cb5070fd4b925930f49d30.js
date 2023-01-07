@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "4b0ed6b732471b3e218b",
+    "revision": "74d67ad6c53b58f4e1d6",
     "url": "/static/css/main.c63d2bf5.chunk.css"
   },
   {
-    "revision": "4b0ed6b732471b3e218b",
-    "url": "/static/js/main.4b0ed6b7.chunk.js"
+    "revision": "74d67ad6c53b58f4e1d6",
+    "url": "/static/js/main.74d67ad6.chunk.js"
   },
   {
-    "revision": "333f4389fd1439194c47",
-    "url": "/static/js/1.333f4389.chunk.js"
+    "revision": "f82b78ff4d3156b67080",
+    "url": "/static/js/1.f82b78ff.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -26,10 +26,6 @@ self.__precacheManifest = [
   {
     "revision": "2d504d1638a4fbdc2017e8bc4d639632",
     "url": "/static/media/vegas3.2d504d16.png"
-  },
-  {
-    "revision": "0a1b3114969c0589da66826ed14bf68f",
-    "url": "/static/media/cv.0a1b3114.pdf"
   },
   {
     "revision": "163d9c39f56b8bdd734a33e1ade75b45",
@@ -64,11 +60,15 @@ self.__precacheManifest = [
     "url": "/static/media/Team4-YSPA.d7faac61.pdf"
   },
   {
+    "revision": "416e995c7a007a72fcb83d0376bab739",
+    "url": "/static/media/cv.416e995c.pdf"
+  },
+  {
     "revision": "3547e4a87f7efaa3f754f64c05451beb",
     "url": "/static/media/child1.3547e4a8.jpg"
   },
   {
-    "revision": "5cd129e77802e5835b521899570dbd14",
+    "revision": "a5ca6fa61f5495cd611582bbab063ce1",
     "url": "/index.html"
   }
 ];
