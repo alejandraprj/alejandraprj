@@ -44,7 +44,7 @@ export const SubTitle = styled.h2`
     float:left;
 `;
 
-export const Link = styled.div`
+export const Linkk = styled.div`
     text-decoration:none;
     color:${Colors.primary};
       & a {

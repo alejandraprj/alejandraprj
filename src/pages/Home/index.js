@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Intro, Experience, Descr, Header, Link,  
+import { Intro, Experience, Descr, Header, Linkk,  
          Title, SubTitle, Date, P,
          Bar, Item, ItemIm, 
        } from "./styles";
@@ -11,7 +11,6 @@ import Footer from "../../components/Footer";
 
 import Me from '../../images/vegas3.png';
 
-import CV from '../../tex/cv.pdf';
 import PAWS from './image/cs91r.png'
 import PAWSDOC from './documents/PereaRojas-CS91R.pdf'
 import HUFPI from './image/hufpi.png';
@@ -21,7 +20,14 @@ import Interfacedoc from './documents/PereaRojas-WebBasedInterface.pdf';
 import YSPA from './image/yspa.png';
 import YSPAdoc from './documents/Team4-YSPA.pdf';
 
-const Home = () => {
+import Resume from "../../tex/cv.pdf";
+
+class Home extends React.Component {
+    onResumeClick() {
+        window.open(Resume);
+    };
+
+    render() {   
     return (
         <>
         <NavBar background={false} />
@@ -50,11 +56,11 @@ const Home = () => {
         </Intro>
 
         <Experience>
-            <Link>
+            <Linkk>
                 <RHS>
-                <a href={CV} target="blank">🖨 <u>printable resume here</u> </a>
+                <a href="/" onClick={this.onResumeClick}>🖨 <u>printable resume here</u> </a>
                 </RHS>
-            </Link>
+            </Linkk>
             <Title>Work Experience</Title>
             <Line></Line>
             <SubTitle>TeamCore PAWS</SubTitle>
@@ -65,7 +71,7 @@ const Home = () => {
                     Cambridge, MA
                 </Date>
                 <P>
-                <Link>Implemented a testing interface to the <a href={'https://github.com/lily-x/paws-smart-api'} target="blank">PAWS SMART API</a> for improved error handling and data validation. Built data through QGIS and Python, developed JSON scripts for a suite of data, and developed a testing interface to automate testing requests to Azure.</Link>
+                <Linkk>Implemented a testing interface to the <a href={'https://github.com/lily-x/paws-smart-api'} target="blank">PAWS SMART API</a> for improved error handling and data validation. Built data through QGIS and Python, developed JSON scripts for a suite of data, and developed a testing interface to automate testing requests to Azure.</Linkk>
                 </P>
             </Descr>
             <Line></Line>
@@ -90,7 +96,7 @@ const Home = () => {
                     Remote / MX
                 </Date>
                 <P>
-                <Link>Worked at a women-led action tank for ethical AI in Mexico, assisted in the early stages of installing a Living Lab in Yucatan and a Diabetic Retinopathy AI-based Screening Program in Jalisco.</Link>
+                <Linkk>Worked at a women-led action tank for ethical AI in Mexico, assisted in the early stages of installing a Living Lab in Yucatan and a Diabetic Retinopathy AI-based Screening Program in Jalisco.</Linkk>
                 </P>
             </Descr>
 
@@ -99,21 +105,21 @@ const Home = () => {
             <Bar>
                 <Item>
                     <Header>
-                        <Link>
+                        <Linkk>
                             <p>COMPSCI 182<br></br> 
                             <a href={'http://procaccia.info/courses/CS182-F22/pset2.pdf'} target="blank">Sudoku Solver </a>
                             <a href={'http://procaccia.info/courses/CS182-F22/pset3.pdf'} target="blank">and Ghost AI</a>
                             <br></br>
                             Oct-Dec 2022</p>
-                        </Link> 
+                        </Linkk> 
                     </Header>
                     <p>Implemented a Sudoku Solver using forward checking and MRV heuristics as a CSP. Created a Ghost AI using Minimax and Alpha Beta Agents with alpha-beta pruning. Implemented value iteration and Q-learning on a variation of the Frozen Lake Environment.</p>
                 </Item>
                 <Item>
                     <Header>
-                        <Link><p>COMPSCI 51<br></br>
+                        <Linkk><p>COMPSCI 51<br></br>
                         <a href={'https://book.cs51.io/pdfs/abstraction-21-project.pdf'} target="blank">MiniML</a><br></br>
-                        May 2022</p></Link>
+                        May 2022</p></Linkk>
                     </Header>
                     <p>
                         Implemented an OCaml interpreter with various features, including unary and binary types, operators, conditionals, and higher-order and recursive functions, using the substitution and dynamic scoped environment models. 
@@ -121,18 +127,18 @@ const Home = () => {
                 </Item>
                 <Item>
                     <Header>
-                        <Link><p>COMPSCI 61<br></br>
+                        <Linkk><p>COMPSCI 61<br></br>
                         <a href={"https://cs61.seas.harvard.edu/site/2021/Shell/"} target="blank">Shell</a><br></br>
-                        Nov 2021</p></Link>
+                        Nov 2021</p></Linkk>
                     </Header>
                     <p>Designed and implemented an interface to handle bash shell's commands (i.e. simple sequence commands, command lists, foreground and background processes, pipelines, conditionals, the cd command, redirections, zombie process handler, and the interrupt signal.
                     </p>
                 </Item>
                 <Item>
                     <Header>
-                        <Link><p>COMPSCI61<br></br> 
+                        <Linkk><p>COMPSCI61<br></br> 
                         <a href={'https://cs61.seas.harvard.edu/site/2021/WeensyOS/'} target="blank">WeensyOS</a><br></br>
-                        Oct 2021</p></Link> 
+                        Oct 2021</p></Linkk> 
                     </Header>
                     <p>Implemented a WeensyOS kernel with features such as kernel isolation, process isolation, virtual page allocation, forking, shared memory, and overlapping virtual memory address spaces, as well as an exiting function. </p>
                 </Item>
@@ -147,8 +153,8 @@ const Home = () => {
                         Web Director<br></br>
                         Jun 2022-Present
                     </Header>
-                    <Link><p>Oversee, manage, and lead web-related projects at <a href="https://harvardpsychedelicsclub.org" target="blank"><u>harvardpsychedelicsclub.org</u></a>. 
-                    Develop strategies to improve user experience, increase website traffic, and achieve the organization's objectives. </p></Link>
+                    <Linkk><p>Oversee, manage, and lead web-related projects at <a href="https://harvardpsychedelicsclub.org" target="blank"><u>harvardpsychedelicsclub.org</u></a>. 
+                    Develop strategies to improve user experience, increase website traffic, and achieve the organization's objectives. </p></Linkk>
                 </Item>
                 <Item>
                     <Header><br></br>
@@ -210,6 +216,7 @@ const Home = () => {
         <Footer background={false} /> 
         </>
     );
+    };
 };
 
 export default Home;
