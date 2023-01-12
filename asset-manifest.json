@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.c63d2bf5.chunk.css",
-  "main.js": "/static/js/main.af2887d4.chunk.js",
-  "main.js.map": "/static/js/main.af2887d4.chunk.js.map",
+  "main.js": "/static/js/main.3b8f0006.chunk.js",
+  "main.js.map": "/static/js/main.3b8f0006.chunk.js.map",
   "static/js/1.f82b78ff.chunk.js": "/static/js/1.f82b78ff.chunk.js",
   "static/js/1.f82b78ff.chunk.js.map": "/static/js/1.f82b78ff.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -17,10 +17,10 @@
   "static/media/PereaRojas-WebBasedInterface.pdf": "/static/media/PereaRojas-WebBasedInterface.81ac8826.pdf",
   "static/media/yspa.png": "/static/media/yspa.2aedafde.png",
   "static/media/Team4-YSPA.pdf": "/static/media/Team4-YSPA.d7faac61.pdf",
-  "static/media/cv.pdf": "/static/media/cv.46789ad8.pdf",
+  "static/media/cv.pdf": "/static/media/cv.1f0d327b.pdf",
   "static/media/child1.jpg": "/static/media/child1.3547e4a8.jpg",
   "static/css/main.c63d2bf5.chunk.css.map": "/static/css/main.c63d2bf5.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.ce6730b4376cced5846b22b316396dcc.js": "/precache-manifest.ce6730b4376cced5846b22b316396dcc.js",
+  "precache-manifest.0b4120ed49bfa0cd67a286b21fd7ef5f.js": "/precache-manifest.0b4120ed49bfa0cd67a286b21fd7ef5f.js",
   "service-worker.js": "/service-worker.js"
 }
