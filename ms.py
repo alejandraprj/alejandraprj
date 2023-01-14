@@ -9,7 +9,7 @@ conf = dotenv_values(".env")
 
 app = flask.Flask(__name__)
 
-CORS(app, origins=[conf['DEV_URL'], conf['WEB_URL'], conf['DEV2_URL'], conf['AMPLIFY']])
+CORS(app, origins=[conf['DEV_URL'], conf['WEB_URL']])
 
 class SendEmailRequest:
 

@@ -6,19 +6,19 @@ import { Links,
        } from "./styles";
 
 
-const NavBar = ({ background }) => {
+const NavBar = () => {
     return (
         <>
         <NavbarContainer> 
             <NavbarInner>
                 <Link to="/" style={{ textDecoration: "none" }}>
-                    <Brand background={background}>
+                    <Brand >
                         alejandra
                     </Brand> 
                 </Link>
                 <Links>
                     <Link to="/contactme">
-                        <NavItem background={background}>      
+                        <NavItem>      
                             contact me
                         </NavItem>
                     </Link>

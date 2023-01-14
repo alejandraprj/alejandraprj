@@ -1,4 +1,4 @@
-
+import React from "react";
 import styled from "styled-components";
 
 const size = {
@@ -10,7 +10,7 @@ const size = {
     laptop: "1024px",
     laptopL: "1440px",
     desktop: "2560px",
-  };
+};
 
 export const device = {
     mobileS: `(min-width: ${size.mobileS})`,
@@ -30,16 +30,16 @@ export const Colors = {
     primary: '#EBE9F0',
     dark: '#12121c',
     darkfield: 'rgba(67, 35, 59, 0.45)'
- };
+};
 
- export const StyledP = styled.p`
+export const StyledP = styled.p`
     font-size: 16px;
     font-family: 'Fira Code';
     text-align: center;
     max-width: 800px;
- `;
+`;
 
- export const Img = styled.img`
+export const Img = styled.img`
     max-width: 100%;
     max-height: 400px;
     width: auto;
@@ -50,7 +50,7 @@ export const Colors = {
     margin-bottom:30px;
 `;
 
- export const Line = styled.div`
+const LineStyle = styled.div`
     height: 1px; 
     width: 100%; 
     background-color: white; 
@@ -58,7 +58,11 @@ export const Colors = {
     margin: auto; 
     margin-top: 10px; 
     margin-bottom: 18px;"
- `;
+`;
+
+export const Line = () => {
+    return(<LineStyle></LineStyle>);
+};
 
 export const Container = styled.div`
     width: 100%;

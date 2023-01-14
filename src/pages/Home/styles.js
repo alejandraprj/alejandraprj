@@ -39,24 +39,20 @@ export const Title = styled.h1`
     margin-top: 40px;
 `;
 
-export const ForLink = styled.div`
-    text-decoration:none;
+export const Link = styled.a`
     color:${Colors.primary};
-      & a {
-        color:${Colors.primary};
-        text-decoration:none;
-        transition:0.2s;
-        font-weight:600;
-      }
-      & a:hover {
-        font-weight:800;
-      }
-      & a:visiter {
-        color:${Colors.primary};
-      }
+    text-decoration:none;
+    transition:0.2s;
+    font-weight:600;
+    & hover {
+    font-weight:800;
+    }
+    & visiter {
+    color:${Colors.primary};
+    }
 `;
 
-export const Descr = styled.div`
+export const Content = styled.div`
     max-width:1000px;
     text-align: justify;
     font-size: inherit;
@@ -66,12 +62,6 @@ export const Descr = styled.div`
     height: auto;
     margin: 0 0 40px 0;
     white-space: no-wrap;
-`;
-
-export const Header = styled.div`
-    display: flex;
-    width:100%;
-    text-align: left;
     line-height:23px;
 `;
 
@@ -119,4 +109,3 @@ export const ItemIm = styled.img`
         scroll-snap-align: center;
     }
 `;
-

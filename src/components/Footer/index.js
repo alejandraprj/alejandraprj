@@ -3,7 +3,7 @@ import { Links, FooterContainer, FooterInner, FooterIcon} from "./styles";
 import Github from "./icons/github.svg";
 import LinkedIn from "./icons/linkedin.svg";
 
-const Footer = ( { background }) => {
+const Footer = () => {
     return (
         <>
         <FooterContainer> 

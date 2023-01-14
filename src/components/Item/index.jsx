@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Header, Content,
          Work, SubContainer, Title, Description } from "./styles";
+import { Line } from "../../styles/index";
 
-// const parse = require('html-react-parser');
+import parse from 'html-react-parser';
 
-const Item = ({ post: { activity, course, date, description, link, link2, name, name2, title, work, place } }) => {
+const Item = ({ post: { activity, course, date, description, link, name, title, work, place } }) => {
     return (  
       <>
       {course && 
@@ -13,13 +14,12 @@ const Item = ({ post: { activity, course, date, description, link, link2, name, 
             <Content> 
                 <p>
                     {course}<br></br> 
-                    <a href={link} target="blank">{name} </a>
-                    {name2 && <a href={link2} target="blank">{name2}</a>}<br></br>
+                    {link && <a href={link} target="blank">{name} </a> || parse(name)}<br></br>
                     {date}
                 </p>
             </Content> 
         </Header>
-        <p>{description}</p>
+        <p>{parse(description)}</p>
         </Container>
       }
       {activity && 
@@ -30,12 +30,13 @@ const Item = ({ post: { activity, course, date, description, link, link2, name, 
                 {date}
             </Header>
             <Content>
-                <p>{description}</p>
+                <p>{parse(description)}</p>
             </Content>
         </Container>
       }
       {work &&
         <>
+        <Line></Line>
         <Work>{work}</Work>
         <p>{date}</p>
         <SubContainer>
@@ -45,7 +46,7 @@ const Item = ({ post: { activity, course, date, description, link, link2, name, 
             </Title>
             <Description>
                 <Content>
-                    {description}
+                    {parse(description)}
                 </Content>
             </Description>
         </SubContainer>
