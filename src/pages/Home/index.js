@@ -21,7 +21,7 @@ import Interfacedoc from './documents/PereaRojas-WebBasedInterface.pdf';
 import YSPA from './image/yspa.png';
 import YSPAdoc from './documents/Team4-YSPA.pdf';
 
-import Resume from "../../latex/cv.pdf";
+import Resume from "../../latex/resume/cv.pdf";
 
 class Home extends React.Component {
     onResumeClick() {
