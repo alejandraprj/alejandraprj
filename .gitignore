@@ -1,14 +1,12 @@
-# private.
-_oldwebsite/
-*.env
-*tex/
-_papers/
-
-# production side effects
-build/
-node_modules/
-
 # cache/ds_store
 *.DS_Store
 *__pycache__
 
+# private.
+_oldwebsite/
+*latex/
+*.env
+
+# production 
+build/
+node_modules/

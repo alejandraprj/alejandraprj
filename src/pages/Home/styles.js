@@ -39,12 +39,7 @@ export const Title = styled.h1`
     margin-top: 40px;
 `;
 
-export const SubTitle = styled.h2`
-    font-size:20px;
-    float:left;
-`;
-
-export const Linkk = styled.div`
+export const ForLink = styled.div`
     text-decoration:none;
     color:${Colors.primary};
       & a {
@@ -73,30 +68,11 @@ export const Descr = styled.div`
     white-space: no-wrap;
 `;
 
-export const Date = styled.div`
-    display: flex;
-    width:40%;
-    text-align: left;
-    justify: none;
-    line-height:28px;
-    margin: 0;
-    & p {
-        margin: 0 0 10px 0;
-        line-height:23px;
-    }
-`;
-
 export const Header = styled.div`
     display: flex;
     width:100%;
     text-align: left;
     line-height:23px;
-`;
-
-export const P = styled.div`
-    display: flex;
-    width:70%;
-    line-height:25px;
 `;
 
 export const Bar = styled.div`
@@ -126,25 +102,6 @@ export const Bar = styled.div`
     }
 `;
 
-export const Item = styled.div`
-    white-space: normal;
-    text-align: justify;
-    @media ${device.mobileS}{
-        display: block;
-        margin: 30px auto;
-        height: 350px;
-        width: 90%;
-        scroll-snap-align: center;
-    }
-    @media ${device.tablet}{
-        display: inline-block;
-        width: 400px;
-        height: 300px;
-        margin: 0 40px 0 10px;
-        scroll-snap-align: center;
-    }
-`;
-
 export const ItemIm = styled.img`
     white-space: normal;
     @media ${device.mobileS}{
@@ -162,3 +119,4 @@ export const ItemIm = styled.img`
         scroll-snap-align: center;
     }
 `;
+

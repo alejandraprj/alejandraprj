@@ -35,17 +35,13 @@ class SendEmailRequest:
 
   def main_task(self, msg):
 
-    # send email is in the background& (we don't wait unfort)
+    # send email is in the background&
     thread = threading.Thread(target=self.send_email, args=(msg,))
     thread.daemon = True 
     thread.start()
 
-    # foreground # start = time.time()
-
     # synchronize (additional 10 sec max)
     thread.join(timeout=10)
-    
-    # print(time.time()-start,"seconds")
 
     status = self.msgsent if self.success else self.emailme
     
