@@ -1,26 +1,24 @@
 import React from "react";
+import parse from 'html-react-parser';
 import { Container, Header, Content,
          Work, SubContainer, Title, Description } from "./styles";
-import { Line } from "../../styles/index";
-
-import parse from 'html-react-parser';
 
 const Item = ({ post: { activity, course, date, description, link, name, title, work, place } }) => {
     return (  
       <>
       {course && 
         <Container>
-        <Header>
-            <Content> 
-                <p>
-                    {course}<br></br> 
-                    {/* eslint-disable-next-line  */}
-                    {link && <a href={link} target="blank">{name} </a> || parse(name)}<br></br>
-                    {date}
-                </p>
-            </Content> 
-        </Header>
-        <p>{parse(description)}</p>
+            <Header>
+                <Content> 
+                    <p>
+                        {course}<br></br> 
+                        {/* eslint-disable-next-line  */}
+                        {link && <a href={link} target="blank">{name} </a> || parse(name)}<br></br>
+                        {date}
+                    </p>
+                </Content> 
+            </Header>
+            <p>{parse(description)}</p>
         </Container>
       }
       {activity && 
@@ -30,14 +28,11 @@ const Item = ({ post: { activity, course, date, description, link, name, title, 
                 {title}<br></br>
                 {date}
             </Header>
-            <Content>
-                <p>{parse(description)}</p>
-            </Content>
+            <Content> <p>{parse(description)}</p> </Content>
         </Container>
       }
       {work &&
         <>
-        <Line></Line>
         <Work>{work}</Work>
         <p>{date}</p>
         <SubContainer>

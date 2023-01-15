@@ -27,8 +27,11 @@ export const workExperience = [
         date: "Jun-Dec 2022",
         place: "Cambridge, MA",
         description: `
-            Improved error handling for the PAWS SMART API dedicated to help detect poaching traps with AI by programming an interface and framework that expedited the API's local deployment and set-up. Also worked with QGIS to craft in Python the large set of artificial data used for testing. 
-            Developed the interface with Python to handle a suite of requests in JSON form and wrote a document to detail procedures.`
+            <ul>
+            <li>Revamped error handling for the PAWS SMART API by programming an interface that expedited testing requests.</li> 
+            <li>Worked with QGIS to craft a set of artificial data used to verify predictions of poaching trap locations.</li>
+            <li>Developed the interface with Python to handle requests in JSON form and wrote a document to detail procedures.</li>
+            </ul>`
     },
     {
         work: "Wildlife Conservation Society",
@@ -36,8 +39,11 @@ export const workExperience = [
         date: "May-Aug 2022",
         place: "Remote / NY",
         description: `
-            Built an article processing program with Python and crafted a set of SQL queries to help develop an online database. 
-            Researched and drafted a white-paper to review state-of-the-art AI-based video processing and conservation-related tools.`
+            <ul>
+            <li>Built three article processing programs with Python and crafted a set of SQL queries to help develop an online database. </li>
+            <li>Researched and drafted a 
+            <a href="https://bit.ly/AI-Advancing-Video-Processing-and-CTDS" target="blank">white-paper</a> to review state-of-the-art AI-based video processing and conservation-related tools.</li>
+            </ul>`
     },
     {
         work: "C Minds",
@@ -45,8 +51,10 @@ export const workExperience = [
         date: "Apr-Aug 2021",
         place: "Remote / MX",
         description: `
-            Interned at a women-led action tank for ethical AI through the David Rockefeller Center for Latin American Studies. 
-            Helped install an AI Living Lab in Yucatan and establish a Diabetic Retinopathy AI-based Screening Program in Jalisco.`
+            <ul>
+            <li>Interned at a women-led action tank for ethical AI through the David Rockefeller Center for Latin American Studies. </li>
+            <li>Helped install an AI Living Lab in Yucatan and establish a Diabetic Retinopathy AI-based Screening Program in Jalisco.</li>
+            </ul>`
     }
 ];
 
@@ -55,22 +63,33 @@ export const activitiesList = [
         activity: "Harvard Psychedelics Club",
         title: "Web Director",
         date: "Jun 2022-Present",
-        description: `Oversee, lead, and manage HPC web-related projects. Started, launched, and deployed
-                      <a href="https://harvardpsychedelicsclub.org" target="blank"><u>harvardpsychedelicsclub.org</u></a>.<br></br>
-                      Teaming up with designers to improve the client-side of the site. Also working to automate the editorial section of the app.`
+        description: `
+            <ul> 
+                <li> Oversee, lead, and manage HPC web-related projects. Started, launched, and deployed
+                      <a href="https://harvardpsychedelicsclub.org" target="blank"><u>harvardpsychedelicsclub.org</u></a>.
+                </li>
+                <li>
+                    Teaming up with designers to improve the client-side of the site. Also working to automate the editorial section of the app.
+                </li>
+            </ul>`
     },
     {
         activity: "Systems Programming and Machine Organization",
         title: "Course Assistant",
         date: "Sep-Dec 2022",
-        description: `Facilitated college-level course of about 200 students on Systems Programming and Machine Organizations with C++. Held office hours and review sections twice weekly. 
-                      <br><br> Covered data memory and representation, assembly, kernel, caching, shell, and thread synchronization.`
+        description: `
+            <ul>
+                <li>Facilitated college-level course of about 200 students on Systems Programming and Machine Organizations with C++. Held office hours and review sections twice weekly. </li>
+                <li>Covered data memory and representation, assembly, kernel, caching, shell, and thread synchronization.</li>
+            </ul>`
     },
     {
         activity: "Women in Computer Science",
         title: "DIB Advocacy Director",
         date: "Aug-Dec 2022",
-        description: "Led initiatives to promote diversity and inclusion within the computer science community, collaborating with the advocacy team to create events and support for underrepresented groups."
+        description: `<ul><li>
+            Oversaw and collabaroateed with 8 members on initiatives to promote diversity and inclusion. Organized events to provide more resources to underrepresented groups.
+            </li></ul>`
     }
 ];
 

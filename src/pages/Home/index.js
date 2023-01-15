@@ -51,7 +51,7 @@ class Home extends React.Component {
 
             <Title>Work Experience</Title> 
             { workExperience.map (
-                    (item, index) => (<Item key={index} index={index} post={item}/>)
+                    (item, index) => (<><Line/> <Item key={index} index={index} post={item}/></>)
                 )
             }
 
