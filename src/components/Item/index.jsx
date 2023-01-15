@@ -14,6 +14,7 @@ const Item = ({ post: { activity, course, date, description, link, name, title, 
             <Content> 
                 <p>
                     {course}<br></br> 
+                    {/* eslint-disable-next-line  */}
                     {link && <a href={link} target="blank">{name} </a> || parse(name)}<br></br>
                     {date}
                 </p>
