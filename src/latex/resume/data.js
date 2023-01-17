@@ -79,8 +79,9 @@ export const activitiesList = [
         date: "Sep-Dec 2022",
         description: `
             <ul>
-                <li>Facilitated college-level course of about 200 students on Systems Programming and Machine Organizations with C++. Held office hours and review sections twice weekly. </li>
-                <li>Covered data memory and representation, assembly, kernel, caching, shell, and thread synchronization.</li>
+                <li>Facilitated college class of about 200 students by holding office hours and a section of about 25 students weekly.</li>
+                <li>Covered data memory and representation, assembly, kernel, caching, shell, and process synchronization using C++.
+                </li>
             </ul>`
     },
     {
