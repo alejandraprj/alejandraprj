@@ -75,9 +75,8 @@ class Contact extends React.Component {
     return ( <>
       <NavBar background={false} />
       <StyledP>
-        I'm currently switching hosting platforms, 
-        and my Flask email app is most likely down!<br></br><br></br>
-        Please email me at <b>aperearojas@college.harvard.edu</b> <br></br> <br></br>Thank you!
+        feel free to reach to me through this mini contact Flask app I built.<br></br>
+        you can also reach out by email to aperearojas@college.harvard.edu
       </StyledP>
       <Img src={Me}></Img>
       <Container>
