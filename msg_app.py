@@ -4,8 +4,8 @@ from flask_cors import CORS
 import flask
 
 conf = dotenv_values(".env")
-
 app = flask.Flask(__name__)
+CORS(app, origins=[conf['DEV_URL'],conf['WEB_URL']])
 
 class SendEmailRequest:
   def __init__(self):
@@ -37,11 +37,12 @@ class SendEmailRequest:
     thread.join(timeout=10)
 
     status = self.msgsent if self.success else self.emailme
-    return flask.jsonify({'status': status})
+    response = flask.jsonify({'status': status})
+    # response.headers['Access-Control-Allow-Origin'] = 'https://www.alejandraprj.com'
+    return response
 
 @app.route('/send', methods=['POST'])
 def handle():
-    CORS(app, origins=[conf['DEV_URL'], conf['WEB_URL']])
     req = SendEmailRequest()
     msg = (f"Subject: {'message through alejandraprj.com'}\n\n"
         +f"Name: {flask.request.form['name']}\n"

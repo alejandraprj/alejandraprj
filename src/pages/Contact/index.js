@@ -46,7 +46,7 @@ class Contact extends React.Component {
     formData.append('email', this.state.email);
     formData.append('message', this.state.message);
 
-    fetch('http://alejandraprj.pythonanywhere.com/send', {
+    fetch('https://alejandraprj.pythonanywhere.com/send', {
           method: 'POST', body: formData })
       .then((response) => {
         if (response.ok) {
@@ -67,7 +67,7 @@ class Contact extends React.Component {
       })
       .catch((error)=>{
         this.setState({loading: false});
-        return alert("sorry about that! it's possible that my server is down. please email me and thank you :)")
+        return alert("sorry about that! i couldn't deliver your message. please email me at aperearojas@college.harvard.edu!")
       });
   }
 
