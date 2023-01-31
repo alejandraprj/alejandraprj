@@ -46,7 +46,7 @@ class Contact extends React.Component {
     formData.append('email', this.state.email);
     formData.append('message', this.state.message);
 
-    fetch('http://192.168.1.207:8080/send', {
+    fetch('http://alejandraprj.pythonanywhere.com/send', {
           method: 'POST', body: formData })
       .then((response) => {
         if (response.ok) {

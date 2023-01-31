@@ -11,10 +11,10 @@ build/
 node_modules/
 
 # other
-src/latex/*/*.aux
-src/latex/*/*.fdb_latexmk
-src/latex/*/*.fls
-src/latex/*/*.log
-src/latex/*/*.out
-src/latex/*/*.gz
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.gz
 src/latex/job

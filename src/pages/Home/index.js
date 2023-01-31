@@ -9,7 +9,7 @@ import Footer from "../../components/Footer";
 import Item from "../../components/Item";
 
 import Me from '../../images/vegas3.png';
-import Resume from "../../latex/resume/cv.pdf";
+import Resume from "../../latex/resume/PereaRojas-Resume.pdf";
 
 import { introP, relevantCoursework, 
          workExperience, 
