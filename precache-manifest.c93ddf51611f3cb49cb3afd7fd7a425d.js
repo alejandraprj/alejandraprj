@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c1f4270b7a4dc5adc720",
+    "revision": "2fdcb68c8aaac34e069e",
     "url": "/static/css/main.c5ce4c06.chunk.css"
   },
   {
-    "revision": "c1f4270b7a4dc5adc720",
-    "url": "/static/js/main.c1f4270b.chunk.js"
+    "revision": "2fdcb68c8aaac34e069e",
+    "url": "/static/js/main.2fdcb68c.chunk.js"
   },
   {
     "revision": "582c777a86fe210d9ef9",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/vegas3.2d504d16.png"
   },
   {
-    "revision": "f68fd0c8d0368d0d503d2e1ac4c75ec1",
-    "url": "/static/media/PereaRojas-Resume.f68fd0c8.pdf"
+    "revision": "1171f583ea0fa7dee9090478ae3e48d5",
+    "url": "/static/media/PereaRojas-Resume.1171f583.pdf"
   },
   {
     "revision": "163d9c39f56b8bdd734a33e1ade75b45",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/static/media/child1.3547e4a8.jpg"
   },
   {
-    "revision": "60d24223f31b5ab457ac8fbca874396a",
+    "revision": "43be9309370f6e9305178690bd8a6353",
     "url": "/index.html"
   }
 ];
