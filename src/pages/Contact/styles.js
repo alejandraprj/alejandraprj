@@ -9,13 +9,12 @@ export const Container = styled.div`
 
 export const Form = styled.form`
     max-width: 444px;
-    width: 100%;
+    width: 95%;
     & button {
         float: center;
         margin: auto;
         margin-top: 15px;
     }
-
     & button:hover {
         cursor: pointer;
     }
