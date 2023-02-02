@@ -17,4 +17,4 @@ node_modules/
 *.log
 *.out
 *.gz
-src/latex/job
+*job/

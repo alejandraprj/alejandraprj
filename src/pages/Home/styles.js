@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors, device } from "../../styles/index";
+import { device } from "../../styles/index";
 
 export const Intro = styled.div`
     width:100%;
@@ -37,19 +37,6 @@ export const Experience = styled.div`
 export const Title = styled.h1`
     font-size:30px;
     margin-top: 40px;
-`;
-
-export const Link = styled.a`
-    color:${Colors.primary};
-    text-decoration:none;
-    transition:0.2s;
-    font-weight:600;
-    & hover {
-    font-weight:800;
-    }
-    & visiter {
-    color:${Colors.primary};
-    }
 `;
 
 export const Content = styled.div`

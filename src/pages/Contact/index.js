@@ -5,7 +5,6 @@ import { Container, Form, Field } from "./styles"
 import { Img, StyledP } from "../../styles/index";
 import Me from "../../images/child1.jpg";
 
-// const msgAPP = process.env.MSGAPP;
 class Contact extends React.Component {
 
   constructor(props) {

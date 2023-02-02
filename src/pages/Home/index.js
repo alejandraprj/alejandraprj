@@ -1,19 +1,22 @@
 import React from "react";
+
 import parse from 'html-react-parser';
+import { Link } from "react-router-dom";
+import { Colors } from "../../styles/index";
 
 import { Line, Img, RHS } from "../../styles/index";
-import { Intro, Experience, Title, Bar, Link, Content, ItemIm } from "./styles";
+import { Intro, Experience, Title, Bar, Content, ItemIm } from "./styles"; 
+// StyledLink ^^ 
 
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import Item from "../../components/Item";
 
 import Me from '../../images/vegas3.png';
-import Resume from "../../latex/resume/PereaRojas-Resume.pdf";
 
 import { introP, relevantCoursework, 
          workExperience, 
-         activitiesList, computerProjects } from "../../latex/resume/data";
+         activitiesList, computerProjects } from "./data";
 
 // documents
 import PAWS from './image/cs91r.png'
@@ -26,10 +29,6 @@ import YSPA from './image/yspa.png';
 import YSPAdoc from './documents/Team4-YSPA.pdf';
 
 class Home extends React.Component {
-
-    onResumeClick() { 
-        window.open(Resume); 
-    };
 
     render() {   
 
@@ -46,7 +45,7 @@ class Home extends React.Component {
         <Experience>
 
             <RHS>
-                <Link href="/" onClick={this.onResumeClick}>🖨 <u>printable resume here</u></Link>
+                <Link to="/resume" style={{ textDecoration: "none", color: Colors.primary}}>🖨 <u>printable resume here</u></Link>
             </RHS>
 
             <Title>Work Experience</Title> 
