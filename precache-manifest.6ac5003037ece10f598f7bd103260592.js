@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "64ea8be39ef5511538b0",
+    "revision": "b60b354db3d6e9490591",
     "url": "/static/css/main.5851ee3a.chunk.css"
   },
   {
-    "revision": "64ea8be39ef5511538b0",
-    "url": "/static/js/main.64ea8be3.chunk.js"
+    "revision": "b60b354db3d6e9490591",
+    "url": "/static/js/main.b60b354d.chunk.js"
   },
   {
     "revision": "64ed7472366dda0d3dfb",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/static/media/Team4-YSPA.d7faac61.pdf"
   },
   {
-    "revision": "252bad0de8acc770fb1e7c242b591d80",
-    "url": "/static/media/PereaRojas-Resume.252bad0d.pdf"
+    "revision": "b37b93f10df96b0f0c84abff8ccaef6b",
+    "url": "/static/media/PereaRojas-Resume.b37b93f1.pdf"
   },
   {
     "revision": "2d504d1638a4fbdc2017e8bc4d639632",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/static/media/child1.26af8c35.jpg"
   },
   {
-    "revision": "469dfbca33d912726d639dcfe296e5bb",
+    "revision": "8451fb71d9ec7f0a9906e6052efca4cd",
     "url": "/index.html"
   }
 ];

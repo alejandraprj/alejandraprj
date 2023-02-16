@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.5851ee3a.chunk.css",
-  "main.js": "/static/js/main.64ea8be3.chunk.js",
-  "main.js.map": "/static/js/main.64ea8be3.chunk.js.map",
+  "main.js": "/static/js/main.b60b354d.chunk.js",
+  "main.js.map": "/static/js/main.b60b354d.chunk.js.map",
   "static/js/1.64ed7472.chunk.js": "/static/js/1.64ed7472.chunk.js",
   "static/js/1.64ed7472.chunk.js.map": "/static/js/1.64ed7472.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -12,7 +12,7 @@
   "static/media/PereaRojas-PeruPolicyProject.pdf": "/static/media/PereaRojas-PeruPolicyProject.fa5cc74f.pdf",
   "static/media/PereaRojas-WebBasedInterface.pdf": "/static/media/PereaRojas-WebBasedInterface.81ac8826.pdf",
   "static/media/Team4-YSPA.pdf": "/static/media/Team4-YSPA.d7faac61.pdf",
-  "static/media/PereaRojas-Resume.pdf": "/static/media/PereaRojas-Resume.252bad0d.pdf",
+  "static/media/PereaRojas-Resume.pdf": "/static/media/PereaRojas-Resume.b37b93f1.pdf",
   "static/media/vegas3.79d15c89.png": "/static/media/vegas3.79d15c89.png",
   "static/media/cs91r.0482b1f4.png": "/static/media/cs91r.0482b1f4.png",
   "static/media/hufpi.c5d850e4.png": "/static/media/hufpi.c5d850e4.png",
@@ -21,6 +21,6 @@
   "static/media/child1.26af8c35.jpg": "/static/media/child1.26af8c35.jpg",
   "static/css/main.5851ee3a.chunk.css.map": "/static/css/main.5851ee3a.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.f1b47a5278f4517aada6e0c7f133848f.js": "/precache-manifest.f1b47a5278f4517aada6e0c7f133848f.js",
+  "precache-manifest.6ac5003037ece10f598f7bd103260592.js": "/precache-manifest.6ac5003037ece10f598f7bd103260592.js",
   "service-worker.js": "/service-worker.js"
 }
