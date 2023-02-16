@@ -47,7 +47,6 @@ class SendEmailRequest:
 
     status = self.msgsent if self.success else self.emailme
     response = flask.jsonify({'status': status, 'success': self.success})
-    # response.headers['Access-Control-Allow-Origin'] = 'https://www.alejandraprj.com'
     return response
 
 @app.route('/send', methods=['POST'])

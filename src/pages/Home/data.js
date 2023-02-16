@@ -28,9 +28,9 @@ export const workExperience = [
         place: "Cambridge, MA",
         description: `
             <ul>
-            <li>Revamped error handling for the PAWS SMART API by programming an interface that expedited testing requests.</li> 
-            <li>Worked with QGIS to craft a set of artificial data used to verify predictions of poaching trap locations.</li>
-            <li>Developed the interface with Python to handle requests in JSON form and wrote a document to detail procedures.</li>
+            <li>Revamped error handling for the PAWS SMART API by programming a Python interface that expedited testing requests. </li> 
+            <li>Crafted artificial park data in QGIS and Python to verify ML predictions, and the interface handles the artificial data with HTTP requests.</li>
+            <li>Outlined the program with greater detail in the API's deployment guide.</li>
             </ul>`
     },
     {
@@ -52,8 +52,8 @@ export const workExperience = [
         place: "Remote / MX",
         description: `
             <ul>
-            <li>Interned at a women-led action tank for ethical AI through the David Rockefeller Center for Latin American Studies. </li>
-            <li>Helped install an AI Living Lab in Yucatan and establish a Diabetic Retinopathy AI-based Screening Program in Jalisco.</li>
+            <li>Expedited three research briefings to assist in the set-up of a Diabetic Retinopathy AI-based Screening Program in Jalisco.</li>
+            <li>Assisted in the installing of a Living Lab in Yucatan with the finalization of three AI-based conservation projects.</li>
             </ul>`
     }
 ];
