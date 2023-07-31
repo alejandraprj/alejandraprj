@@ -18,3 +18,8 @@ node_modules/
 *.out
 *.gz
 *job/
+*.xdv
+*.synctex*
+
+# programs
+*result/
