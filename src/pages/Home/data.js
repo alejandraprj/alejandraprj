@@ -22,15 +22,35 @@ export const relevantCoursework = `
 
 export const workExperience = [
     {
-        work: "TeamCore PAWS",
-        title: "Software Engineer",
+        work: "IBM",
+        title: "Quantum Software Developer Intern",
+        date: "May-Aug 2023",
+        place: "Yorktown Heights, NY",
+        description: `
+            <ul>
+            <li>Contributed to job compilation efficiency in Qiskit Runtime by implementing a Go endpoint for owner-verified deletion of compiled quantum payloads, complemented by a mock API for unit testing and to verify the functionality of the endpoint.</li> 
+            <li>Augmented Qiskit Runtime's reliability by designing over 20 error types and 30 unit tests. Implemented various forms of error propagation, logging, and handling across different Python codebases, including the Near-Time Compute services.</li>`
+    },
+    {
+        work: "Entrevista",
+        title: "Chief Technical Officer and Co-Founder",
+        date: "Apr-May 2023",
+        place: "New York, NY",
+        description: `
+            <ul>
+            <li>Created and launched the MVP of <a href="https://www.entrevista.ai" target="blank">Entrevista</a> by developing a web-based JavaScript recorder and text-to-speech that simulates a real-time casing interview via a REST API framework and a Python video-processor, an open-source text-generator, and AWS S3 handlers. Deployed in the span of a month, leveraging Heroku, GitHub, and AWS.</li> 
+            <li>Earned a finalist position in the Y-Combinator application with two Co-Founders, initiating team and user acquisition.</li>
+            </ul>`
+    },
+    {
+        work: "Teamcore Lab at Harvard University",
+        title: "Software Engineer Intern",
         date: "Jun-Dec 2022",
         place: "Cambridge, MA",
         description: `
             <ul>
-            <li>Revamped error handling for the PAWS SMART API by programming a Python interface that expedited testing requests. </li> 
-            <li>Crafted artificial park data in QGIS and Python to verify ML predictions, and the interface handles the artificial data with HTTP requests.</li>
-            <li>Outlined the program with greater detail in the API's deployment guide.</li>
+            <li>Boosted efficiency and reliability of the PAWS SMART API by developing a Python HTTP API. This facilitated simultaneous multi-case testing, supplanted manual Postman HTTP requests, and yielded substantial time savings.</li> 
+            <li>Broadened the testing scope and enhanced error handling by leveraging Azure for data storage and creating 15 additional mock QGIS parks, enabling bulk request processing, thorough testing, and accelerating the integration of new features.</li>
             </ul>`
     },
     {
@@ -40,9 +60,8 @@ export const workExperience = [
         place: "Remote / NY",
         description: `
             <ul>
-            <li>Built three article processing programs with Python and crafted a set of SQL queries to help develop an online database. </li>
-            <li>Researched and drafted a 
-            <a href="https://bit.ly/AI-Advancing-Video-Processing-and-CTDS" target="blank">white-paper</a> to review state-of-the-art AI-based video processing and conservation-related tools.</li>
+            <li>Developed an article processing interface with Python and SQL for Google News and Scholar. Contributed with over 1,500 parsed articles from the first use of the program, which helped identify quality sources to start the <a href="https://library.wcs.org" target="blank">WCS Library</a>.</li>
+            <li>With the parser algorithm, researched and drafted an 8-page <a href="https://bit.ly/AI-Advancing-Video-Processing-and-CTDS" target="blank">white-paper</a> on state-of-the-art AI video processing and conservation tools that helped advance multiple projects at WCS throughout months after the internship.</li>
             </ul>`
     },
     {
@@ -60,36 +79,21 @@ export const workExperience = [
 
 export const activitiesList = [
     {
-        activity: "Harvard Psychedelics Club",
-        title: "Web Director",
-        date: "Jun 2022-Present",
-        description: `
-            <ul> 
-                <li> Oversee, lead, and manage HPC web-related projects. Started, launched, and deployed
-                      <a href="https://harvardpsychedelicsclub.org" target="blank"><u>harvardpsychedelicsclub.org</u></a>.
-                </li>
-                <li>
-                    Teaming up with designers to improve the client-side of the site. Also working to automate the editorial section of the app.
-                </li>
-            </ul>`
-    },
-    {
         activity: "Systems Programming and Machine Organization",
-        title: "Course Assistant",
+        title: "Teaching Fellow",
         date: "Sep-Dec 2022",
         description: `
             <ul>
-                <li>Facilitated college class of about 200 students by holding office hours and a section of about 25 students weekly.</li>
-                <li>Covered data memory and representation, assembly, kernel, caching, shell, and process synchronization using C++.
-                </li>
+                <li>Facilitated a <a href="https://cs61.seas.harvard.edu/site/2022" target="blank">Systems Programming</a> class of about 200 students by section and office hours of 20+ students.</li>
+                <li>Covered 6 topics using C++ and GNU: data memory and representation, assembly, kernel, caching, shell, and threading.</li>
             </ul>`
     },
     {
-        activity: "Women in Computer Science",
+        activity: "Harvard Women in Computer Science",
         title: "DIB Advocacy Director",
         date: "Aug-Dec 2022",
         description: `<ul><li>
-            Oversaw and collabaroateed with 8 members on initiatives to promote diversity and inclusion. Organized events to provide more resources to underrepresented groups.
+            Oversaw and collaborated with 8 members on initiatives to promote inclusion. With a budget of approximately $300, helped organized events throughout the semester, providing resources and support to diverse groups of over 100 students.
             </li></ul>`
     }
 ];

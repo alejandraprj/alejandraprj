@@ -5,6 +5,8 @@ import { Container, Form, Field } from "./styles"
 import { Img, StyledP } from "../../styles/index";
 import Me from "../../images/child1.jpg";
 
+const url = "https://alejandraprj.pythonanywhere.com/send"; //"http://127.0.0.1:5000/send"; //
+
 class Contact extends React.Component {
 
   constructor(props) {
@@ -37,7 +39,7 @@ class Contact extends React.Component {
     
     event.preventDefault();
 
-    if (this.state.name === '' || this.state.email === '' || this.state.messate === ''){
+    if (this.state.name === '' || this.state.email === '' || this.state.message === ''){
       alert("please complete the form before submitting")
     }
     else {
@@ -48,7 +50,7 @@ class Contact extends React.Component {
       formData.append('email', this.state.email);
       formData.append('message', this.state.message);
 
-      fetch('https://alejandraprj.pythonanywhere.com/send', {method: 'POST', body: formData })
+      fetch(url, {method: 'POST', body: formData })
         .then((response) => {
           if (response.ok) {
             return response.json();
@@ -66,6 +68,7 @@ class Contact extends React.Component {
         })
         .catch((error)=>{
           this.setState({loading: false});
+          console.log(error)
           return alert("sorry! i couldn't deliver your message. please email me at aperearojas@college.harvard.edu!")
         });
     }
