@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.48eae827.chunk.css",
-  "main.js": "/static/js/main.e1a7f4d7.chunk.js",
-  "main.js.map": "/static/js/main.e1a7f4d7.chunk.js.map",
+  "main.js": "/static/js/main.d93157cb.chunk.js",
+  "main.js.map": "/static/js/main.d93157cb.chunk.js.map",
   "static/js/1.765ada0c.chunk.js": "/static/js/1.765ada0c.chunk.js",
   "static/js/1.765ada0c.chunk.js.map": "/static/js/1.765ada0c.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -21,6 +21,6 @@
   "static/media/PereaRojas-Resume.pdf": "/static/media/PereaRojas-Resume.39e3b929.pdf",
   "static/css/main.48eae827.chunk.css.map": "/static/css/main.48eae827.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.13492ba8179930f243e680ed7fecbc5c.js": "/precache-manifest.13492ba8179930f243e680ed7fecbc5c.js",
+  "precache-manifest.782ccc57b76c5e43059cdd3d78a85186.js": "/precache-manifest.782ccc57b76c5e43059cdd3d78a85186.js",
   "service-worker.js": "/service-worker.js"
 }
