@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d93157cb91c334c251af",
+    "revision": "368ea88856ce5f16f4a8",
     "url": "/static/css/main.48eae827.chunk.css"
   },
   {
-    "revision": "d93157cb91c334c251af",
-    "url": "/static/js/main.d93157cb.chunk.js"
+    "revision": "368ea88856ce5f16f4a8",
+    "url": "/static/js/main.368ea888.chunk.js"
   },
   {
     "revision": "765ada0c28ee93ddf631",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/static/media/PereaRojas-Resume.39e3b929.pdf"
   },
   {
-    "revision": "49d47d856dd3df27a777bdd83dbb243f",
+    "revision": "c5f2dac3556609c358996da02bd2c19d",
     "url": "/index.html"
   }
 ];
