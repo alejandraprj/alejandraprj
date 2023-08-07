@@ -5,6 +5,7 @@
 # private
 *.env
 _oldwebsite/
+*old_resume
 
 # production 
 build/

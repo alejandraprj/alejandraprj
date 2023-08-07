@@ -1,0 +1,66 @@
+% aleCV.sty Alejandra Perea Rojas, 8/1/23
+% ideas from https://web.stanford.edu/~chadj/chadstyle.sty
+\special{papersize=8.5in,11in}
+
+\definecolor{myBlue}{rgb}{.2, .35, .59}
+\definecolor{darkBlue}{rgb}{.094117, .2, .3529}
+\hypersetup{
+  colorlinks   = true,        % Color links instead of boxes
+  urlcolor     = darkBlue,    % Color for external hyperlinks
+  linkcolor    = myBlue,      % Color of internal links
+  citecolor    = red          % Color of citations
+}
+
+\newcommand{\links}{
+    \centerline{
+    \href{mailto:aperearojas@college.harvard.edu}{
+      \color{darkBlue}\faEnvelope~
+      aperearojas@college.harvard.edu
+    } 
+    $\cdot$~
+    \href{https://github.com/alejandraprj}{
+      \color{darkBlue}\faGithub~
+      github.com/alejandraprj
+    }
+    $\cdot$~
+    \href{https://alejandraprj.com}{
+      \color{darkBlue}\faGlobe~
+      alejandraprj.com
+    }
+  }
+  \vspace{2.5mm}
+}
+\renewcommand{\title}[1]{
+    \noindent{\textsc{\large #1}}\vspace{-8pt}\newline
+    \noindent\makebox[\linewidth]{\rule{7.5in}{0.3pt}}
+}
+\newcommand{\edu}[6]{
+    \noindent\textbf{#1}\hfill #2
+    \begin{itemize}[itemsep=-.4em, leftmargin=1em]\vspace{-1.5mm}
+        \item #3 \hfill #4
+        \item Relevant projects:
+            \begin{itemize}[itemsep=-.4em, leftmargin=1em]\vspace{-3mm}
+                \item #5 \vspace{-1mm}
+            \end{itemize}
+        \item Relevant coursework:
+            \begin{itemize}[itemsep=-.4em, leftmargin=1em]\vspace{-3mm}
+                \item #6
+            \end{itemize}
+    \end{itemize}
+}
+\newcommand{\descr}[1]{
+    \begin{itemize}[itemsep=-.4em, leftmargin=1em]\vspace{-2mm}
+        #1
+    \end{itemize}  
+}
+\newcommand{\job}[5]{
+    \noindent\textbf{#1} \hfill #2\newline
+    \textsc{#3} \hfill #4
+    \descr{#5}
+}
+\newcommand{\skills}[4]{
+    \noindent\textbf{Programming:} #1 \newline
+    \textbf{Development:} #2 \newline
+    \textbf{Environments:} #3 \newline
+    \textbf{Language:} #4 \newline
+}
