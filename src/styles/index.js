@@ -24,12 +24,13 @@ export const device = {
     desktopL: `(min-width: ${size.desktop})`,
 };
 
+// source: https://www.w3schools.com/colors/colors_picker.asp
 export const Colors = {
-    altBg: "linear-gradient(to left, #2A5470, #4C4177)",
-    bgImage: "linear-gradient(to left, #b86a30,#35488c)",
+    bgImage: "linear-gradient(to left, #262f5a, #444a88)",
+    altBg: "linear-gradient(to right, #35488c, #6699cc)",
     primary: '#EBE9F0',
     dark: '#12121c',
-    darkfield: 'rgba(67, 35, 59, 0.45)'
+    darkfield: '#333766',
 };
 
 export const StyledP = styled.p`
@@ -77,7 +78,7 @@ export const MegaContainer = styled.html`
     background-image: ${Colors.bgImage};
     padding: 3%;
     box-sizing: border-box;
-    color: rgb(238,232,244);
+    color: ${Colors.primary};
     min-height: 100vh;
     font-size: 15px;
     -webkit-font-smoothing: antialiased;

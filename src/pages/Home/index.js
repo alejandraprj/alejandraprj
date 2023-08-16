@@ -12,7 +12,7 @@ import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import Item from "../../components/Item";
 
-import Me from '../../images/vegas3.png';
+import Me from '../../images/IBMQ.JPG';
 
 import { introP, relevantCoursework, 
          workExperience, 

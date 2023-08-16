@@ -1,9 +1,9 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
-import { Container, Form, Field } from "./styles"
+import { Container, Form, Field, Button } from "./styles"
 import { Img, StyledP } from "../../styles/index";
-import Me from "../../images/child1.jpg";
+import Me from "../../images/bywater.png";
 
 const url = "https://alejandraprj.pythonanywhere.com/send"; //"http://127.0.0.1:5000/send"; //
 
@@ -78,10 +78,8 @@ class Contact extends React.Component {
     return ( <>
       <NavBar background={false} />
       <StyledP>
-        feel free to reach to me through this mini contact Flask app I built.<br></br>
-        you can also reach out by email to aperearojas@college.harvard.edu <br></br>
+        Leave me a message here! <br></br>
       </StyledP>
-      <Img src={Me}></Img>
       <Container>
         <Form onSubmit={(this.handleSubmit)}>
           <Field><label>
@@ -100,11 +98,18 @@ class Contact extends React.Component {
             <><p> Loading... </p></>
           ) : ( 
             <>
-              <button type="submit">Submit</button> 
+              <Button type="submit">Submit</Button> 
             </>
           )}
         </Form>
       </Container>
+
+      <StyledP>
+        I look forward to hearing from you!<br></br>
+        You can also reach out by email to aperearojas@college.harvard.edu<br></br>
+      </StyledP>
+
+      <Img src={Me}></Img>
       <Footer background={false} /> 
     </> );
   }

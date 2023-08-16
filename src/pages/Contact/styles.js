@@ -28,7 +28,7 @@ export const Field = styled.div`
     margin-top: 20px;
     
     & label, input, textarea {
-        width:100%;
+        width: 100%;
         position: relative;
         display: block;
         margin: auto;
@@ -52,5 +52,11 @@ export const Field = styled.div`
     & textarea {
         height: 100px;
     }
+`
 
+export const Button = styled.button`
+    width: 80px;
+    position: relative;
+    display: block;
+    margin: auto;
 `

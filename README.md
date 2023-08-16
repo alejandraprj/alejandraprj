@@ -1,3 +1,3 @@
 ### alejandraprj with react
 
-my name is ale, and you can learn more about me in [alejandraprj.com](https://alejandraprj.com).
+My name is Alejandra, and I am rising senior at Harvard studying Computer Science. You can contact me [here](https://alejandraprj.com/contactme/).
